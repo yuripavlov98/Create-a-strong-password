@@ -14,3 +14,16 @@ add_lowercase = input('Включить прописные буквы? (д = д�
 add_uppercase = input('Включить строчные буквы? (д = да, н = нет) ').strip()
 add_punctuation = input('Включить символы, такие как !#$%&*+-=?@^_? (д = да, н = нет) ').strip()
 remove_badsymbols = input('Исключить символы il1Lo0O? (д = да, н = нет)').strip()
+
+
+if add_digit.lower() == 'д':
+    chars += digits
+if add_lowercase.lower() == 'д':
+    chars += lowercase_letters
+if add_uppercase.lower() == 'д':
+    chars += uppercase_letters
+if add_punctuation.lower() == 'д':
+    chars += punctuation
+if remove_badsymbols.lower() == 'д':
+    for c in 'il1Lo0O':
+        chars = chars.replace(c, '')
