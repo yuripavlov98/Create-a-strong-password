@@ -27,3 +27,10 @@ if add_punctuation.lower() == 'д':
 if remove_badsymbols.lower() == 'д':
     for c in 'il1Lo0O':
         chars = chars.replace(c, '')
+
+
+def generate_password(length, chars):
+    password = ''
+    for j in range(length):
+        password += random.choice(chars)
+    return password
